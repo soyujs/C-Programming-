@@ -1,11 +1,8 @@
 #include<stdio.h>
 
 int main(){
-    int length, breath;
-    printf("Enter the length: ");
-    scanf("%d" ,&length);
-    printf("Enter the breath: ");
-    scanf("%d" ,&breath);
-    printf("Area of the rectangle is %d" ,length*breath);
+    int a=1; 
+    int b = a;
+    int v = 3*3;
     return 0;
 }

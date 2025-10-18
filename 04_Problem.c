@@ -1,13 +1,11 @@
 #include<stdio.h>
 
 int main(){
-    int p, t, r, s;
-    printf("Enter the principle: ");
-    scanf("%d" ,&p);
-    printf("Enter the rate of intrest: ");
-    scanf("%d" ,&r);
-    printf("Enter the time: ");
-    scanf("%d" ,&t);
-    printf("The simple intrest is %d" ,(p*t*r)/100);
+    int x = 2;
+    int y = 3;
+    int z = 3;
+    int k = 1;
+    float a = 3*x/y - z+k;
+    printf("The value of a is %f" ,a);
     return 0;
 }
