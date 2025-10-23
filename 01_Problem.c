@@ -1,12 +1,11 @@
 #include<stdio.h>
 
 int main(){
-    int a = 10;
-    if (a == 11){
-        printf("I'm 11");
-    }
-    else{
-        printf("I'm not 11");
+    int n;
+    printf("Enter any number: ");
+    scanf("%d" ,&n);
+    for (int i = 1; i <= 10; i++){
+        printf("%d X %d = %d \n" ,n , i ,n*i);
     }
     return 0;
 }

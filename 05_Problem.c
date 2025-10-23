@@ -1,14 +1,12 @@
 #include<stdio.h>
 
 int main(){
-    char ch = 'A';
-    printf("The character you entered is %c \n" ,ch);
-    printf("The value of the character you entered is %d \n" ,ch);
-    if (ch >= 97 && ch <= 122){
-        printf("The character you entered is lower case character");
+    int i = 1;
+    int sum = 0;
+    while (i <= 10){
+        sum += i;
+        i++;
     }
-    else {
-        printf("The character you entered is not a lower case character");
-    }
+    printf("The sum of first 10 natural numbers is: %d" ,sum);
     return 0;
 }

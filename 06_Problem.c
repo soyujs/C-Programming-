@@ -1,26 +1,18 @@
 #include<stdio.h>
 
 int main(){
-    int a, b, c, d;
-    printf("Enter a number: ");
-    scanf("%d" ,&a);
-    printf("Enter a number: ");
-    scanf("%d" ,&b);
-    printf("Enter a number: ");
-    scanf("%d" ,&c);
-    printf("Enter a number: ");
-    scanf("%d" ,&d);
-    if (a > b && a > c && a > d){
-        printf("The greatest number you entered is %d" ,a);
+    int i = 1;
+    int sum = 0;
+    do{
+        sum += i;
+        i++;
+    } while (i <= 10);
+    printf("The sum of first 10 natural numbers is: %d \n" ,sum);
+    int b = 0;
+    for (int i = 1; i <= 10; i++)
+    {
+        b += i;
     }
-    else if (b > a && b > c && b > d){
-        printf("The greatest number you entered is %d" ,b);
-    }
-    else if (c > a && c > b && c > d){
-        printf("The greatest number you entered is %d" ,c);
-    }
-    else {
-        printf("The greatest number you entered is %d" ,d);
-    }
+    printf("The sum of first 10 natural numbers is: %d \n" ,b);
     return 0;
 }
