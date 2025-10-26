@@ -1,20 +1,15 @@
 #include<stdio.h>
 
+float force(int m, int g);
+
+float force(int m, int g){
+    return m * 9.8;
+}
+
 int main(){
-    int a;
-    printf("Enter your monthly salary: ");
-    scanf("%d" ,&a);
-    if (a < 250000){
-        printf("You dont have to pay any tax");
-    }
-    else if (a > 250000 && a < 500000){
-        printf("You need to pay 5 percent tax from your salary");
-    }
-    else if (a > 500000 && a < 1000000){
-        printf("You need to pay 20 percent tax from your salary");
-    }
-    else if (a > 1000000){
-        printf("You need to pay 30 percent tax from your salary");
-    }
+    float m, g = 9.8;
+    printf("Enter the mass: ");
+    scanf("%f", &m);
+    printf("The force exerted by mass %.0f and gravity %.1f is %.2f", m, g, force(m, g));
     return 0;
 }

@@ -1,14 +1,18 @@
 #include<stdio.h>
 
+int fibo(int);
+
+int fibo(int n){
+    if (n == 1 || n == 2){
+        return n - 1;
+    }
+    return fibo(n - 1) + fibo(n - 2);
+}
+
 int main(){
-    int a;
-    printf("Enter any year: ");
-    scanf("%d" ,a);
-    if ((a % 4 == 0 && a % 100 != 0) || a % 400 == 0){
-        printf("The year you entered is a leap year");
-    }
-    else {
-        printf("The year you entered is not a leap year");
-    }
-    return ;
+    int n;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    printf("The fibonaaci secries of %d is %d", n, fibo(n));
+    return 0;
 }
