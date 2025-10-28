@@ -1,18 +1,15 @@
 #include<stdio.h>
 
-int fibo(int);
+int val(int*);
 
-int fibo(int n){
-    if (n == 1 || n == 2){
-        return n - 1;
-    }
-    return fibo(n - 1) + fibo(n - 2);
+int val(int* a){
+    *a = *a * 30;
 }
 
 int main(){
-    int n;
-    printf("Enter a number: ");
-    scanf("%d", &n);
-    printf("The fibonaaci secries of %d is %d", n, fibo(n));
+    int x = 45;
+    printf("The value of x is %d \n", x);
+    val(&x);
+    printf("The value of x is %d", x);
     return 0;
 }

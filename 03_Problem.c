@@ -1,15 +1,15 @@
 #include<stdio.h>
 
-float force(int m, int g);
+int val(int*);
 
-float force(int m, int g){
-    return m * 9.8;
+int val(int* a){
+    *a = *a * 30;
 }
 
 int main(){
-    float m, g = 9.8;
-    printf("Enter the mass: ");
-    scanf("%f", &m);
-    printf("The force exerted by mass %.0f and gravity %.1f is %.2f", m, g, force(m, g));
+    int x = 45;
+    printf("The value of x is %d \n", x);
+    val(&x);
+    printf("The value of x is %d", x);
     return 0;
 }

@@ -1,15 +1,14 @@
 #include<stdio.h>
 
+int val(int);
+
+int val(int a){
+    a = a * 10;
+}
+
 int main(){
-    int n;
-    printf("Enter any number: ");
-    scanf("%d", &n);
-    for (int i = 0; i < n; i++){
-        for (int j = 0; j < 2 * i + 1; j++){
-            printf("*");
-        }
-        printf("\n");
-    }
-    
+    int x = 45;
+    printf("The value of x is %d \n", x);
+    printf("The value of x is %d \n", x);
     return 0;
 }

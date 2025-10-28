@@ -1,19 +1,13 @@
 #include<stdio.h>
 
-float avg(int x, int y, int z);
-
-float avg(int x, int y, int z){
-    return (x + y + z) / 3.0;
-}
-
 int main(){
-    int x, y, z;
-    printf("Enter the first number: ");
-    scanf("%d", &x);
-    printf("Enter the second number: ");
-    scanf("%d", &y);
-    printf("Enter the third number: ");
-    scanf("%d", &z);
-    printf("The average of numbers you entered is %f" ,avg(x, y, z));
+    char a = 'A';
+    char* b = &a;
+    int c = 45;
+    int* d = &c;
+    printf("The address of a is %p \n", &a);
+    printf("The value of a is %d \n", *b);
+    printf("The address of c is %p \n", &c);
+    printf("The value os c is %d \n", *d);
     return 0;
 }

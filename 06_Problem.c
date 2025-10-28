@@ -1,18 +1,11 @@
 #include<stdio.h>
 
-int sumNatural(int);
-
-int sumNatural(int n){
-    if (n == 1){
-        return 1;
-    }
-    return sumNatural(n - 1) + n;
-}
-
 int main(){
-    int n;
-    printf("Enter a number: ");
-    scanf("%d", &n);
-    printf("The sum of the natural number %d is %d", n, sumNatural(n));
+    int i = 2;
+    int* a = &i;
+    int** b = &a;
+    printf("The address of i is %p \n", &i);
+    printf("The value of i is %d \n", *a);
+    printf("The value of i is %d \n", **b);
     return 0;
 }

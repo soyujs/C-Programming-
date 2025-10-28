@@ -1,15 +1,14 @@
 #include<stdio.h>
 
-float farh(int c);
-
-float farh(int c){
-    return (c * 9 / 5) + 32;
+int add(int* b){
+    printf("The value of a is %d", *b);
+    return 0;
 }
 
 int main(){
-    float c;
-    printf("Enter the celcius: ");
-    scanf("%f", &c);
-    printf("The farhneight of the celcius you entered is: %.2f", farh(c));
+    int a = 2;
+    int* b = &a;
+    printf("The address of a is %p \n", &a);
+    add(b);
     return 0;
 }
