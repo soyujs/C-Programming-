@@ -1,18 +1,18 @@
 #include<stdio.h>
 
-int main(){
-    int i = 1;
-    int sum = 0;
-    do{
-        sum += i;
-        i++;
-    } while (i <= 10);
-    printf("The sum of first 10 natural numbers is: %d \n" ,sum);
-    int b = 0;
-    for (int i = 1; i <= 10; i++)
-    {
-        b += i;
+int sumNatural(int);
+
+int sumNatural(int n){
+    if (n == 1){
+        return 1;
     }
-    printf("The sum of first 10 natural numbers is: %d \n" ,b);
+    return sumNatural(n - 1) + n;
+}
+
+int main(){
+    int n;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    printf("The sum of the natural number %d is %d", n, sumNatural(n));
     return 0;
 }

@@ -1,10 +1,15 @@
 #include<stdio.h>
 
 int main(){
-    int n = 0;
-    for (int i = 1; i <= 10; i++){
-        n += (8 * i);
+    int n;
+    printf("Enter any number: ");
+    scanf("%d", &n);
+    for (int i = 0; i < n; i++){
+        for (int j = 0; j < 2 * i + 1; j++){
+            printf("*");
+        }
+        printf("\n");
     }
-    printf("The sum the table of 8 is %d" ,n);
+    
     return 0;
 }
